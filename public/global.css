@@ -1,10 +1,45 @@
-html, body {
+html {
 	position: relative;
 	width: 100%;
 	height: 100%;
+
+  --color-00: #364b9a;
+  --color-01: #3c5ba3;
+  --color-02: #436bad;
+  --color-03: #4a7bb7;
+  --color-04: #5689be;
+  --color-05: #6297c5;
+  --color-06: #6ea6cd;
+  --color-07: #7cb2d3;
+  --color-08: #8abeda;
+  --color-09: #98cae1;
+  --color-10: #a6d2e5;
+  --color-11: #b4dbea;
+  --color-12: #c2e4ef;
+  --color-13: #cfe6e3;
+  --color-14: #dce9d7;
+  --color-15: #eaeccc;
+  --color-16: #f0e6b6;
+  --color-17: #f7e0a0;
+  --color-18: #feda8b;
+  --color-19: #fdcd7e;
+  --color-20: #fdc072;
+  --color-21: #fdb366;
+  --color-22: #faa15d;
+  --color-23: #f88f54;
+  --color-24: #f67e4b;
+  --color-25: #ed6841;
+  --color-26: #e55237;
+  --color-27: #dd3d2d;
+  --color-28: #d6362c;
+  --color-29: #d02f2b;
+  --color-30: #a50026;
 }
 
 body {
+  position: relative;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 8px;
   box-sizing: border-box;
