@@ -1,0 +1,91 @@
+<style>
+  section {
+    padding: 1rem;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  form {
+    display: flex;
+    position: relative;
+    margin-top: 1rem;
+  }
+
+  input {
+    width: 100%;
+    padding: .5rem;
+
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--gray);
+    border-radius: 2px;
+    box-shadow: inset 0 .05rem .125rem rgba(187, 187, 187, .3);
+
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  input:hover {
+    border-color: var(--black);
+  }
+
+  input:active,
+  input:focus {
+    border-color: var(--black);
+    box-shadow: 0 0 0 .15rem rgba(187, 187, 187, .3);
+    outline: 0;
+  }
+
+  button {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+
+    height: var(--icon-size);
+    width: var(--icon-size);
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--white);
+    border: transparent;
+    border-radius: 50px;
+    box-shadow: none;
+
+    cursor: pointer;
+    outline: none;
+  }
+
+  button:hover,
+  button:active,
+  button:focus {
+    background-color: rgba(187, 187, 187, .3);
+  }
+
+  button:hover > svg,
+  button:active > svg,
+  button:focus > svg {
+    stroke-width: 1.5;
+  }
+
+  button:active,
+  button:focus {
+    box-shadow: 0 0 0 .3rem rgba(187, 187, 187, .5);
+  }
+</style>
+
+<section>
+  <h1>Hi.</h1>
+  <form method="get" id="search-form" action="https://duckduckgo.com/" autocomplete="off">
+    <input type="text" name="q" aria-label="Search on DuckDuckGo" autofocus/>
+    <button>
+      <!-- Icon from https://feathericons.com/ -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </button>
+  </form>
+</section>
