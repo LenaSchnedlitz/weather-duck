@@ -1,7 +1,7 @@
 <script>
   export let unixTime;
 
-  function extractHour() {
+  function hour() {
     return new Date(unixTime * 1000).getHours();
   }
 </script>
@@ -17,6 +17,6 @@
 </style>
 
 <span>
-  {extractHour()}
+  {hour()}
   <sup>00</sup>
 </span>

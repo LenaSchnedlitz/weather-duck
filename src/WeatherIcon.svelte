@@ -1,7 +1,7 @@
 <script>
   export let iconCode;
 
-  function getIconId() {
+  function iconId() {
     switch (iconCode) {
       case "01d":
         return "sun";
@@ -47,5 +47,5 @@
 </style>
 
 <svg viewBox="0 0 24 24">
-  <use xlink:href="weather.svg#{getIconId()}"></use>
+  <use xlink:href="weather.svg#{iconId()}"></use>
 </svg>

@@ -1,17 +1,19 @@
 <script>
-  const hour = new Date().getHours();
+  export let greetings;
 
-  function createGreeting() {
-    if (hour < 5) {
-      return "Gute Nacht.";
-    } else if (hour < 11) {
-      return "Guten Morgen!";
-    } else if (hour < 17) {
-      return "Hi."
-    } else if (hour < 23) {
-      return "Schönen Abend!";
+  function greeting() {
+    const currentHour = new Date().getHours();
+
+    if (currentHour < 5) {
+      return greetings.night;
+    } else if (currentHour < 11) {
+      return greetings.morning;
+    } else if (currentHour < 17) {
+      return greetings.day;
+    } else if (currentHour < 23) {
+      return greetings.evening;
     } else {
-      return "Gute Nacht.";
+      return greetings.night;
     }
   }
 </script>
@@ -134,7 +136,7 @@
 </style>
 
 <section>
-  <h1>{createGreeting()}</h1>
+  <h1>{greeting()}</h1>
   <form method="get" id="search-form" action="https://duckduckgo.com/" autocomplete="off">
     <input type="text" name="q" aria-label="Search on DuckDuckGo" autofocus/>
     <button>

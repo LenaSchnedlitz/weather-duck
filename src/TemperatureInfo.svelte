@@ -1,7 +1,7 @@
 <script>
   export let temperature;
 
-  function getBackgroundColor() {
+  function backgroundColor() {
     if (temperature > 49) {
       temperature = 49;
     } else if (temperature < -50) {
@@ -11,9 +11,9 @@
   }
 
   /**
-   * Returns color (black or white) with higher contrast.
+   * Returns black or white depending on contrast.
    */
-  function getColor() {
+  function color() {
     if (-32 <= temperature <= -18 || 35 <= temperature) {
       return 'var(--white)';
     }
@@ -42,6 +42,6 @@
   }
 </style>
 
-<div style="background-color:{getBackgroundColor()};color:{getColor()}">
+<div style="background-color:{backgroundColor()};color:{color()};">
   {Math.round(temperature)}°
 </div>
