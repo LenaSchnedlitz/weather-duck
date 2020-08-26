@@ -28,8 +28,9 @@ jobs:
           npm build
 
       - name: Bla
-        with:
-          target_branch: gh-pages
-          build_dir: public
+        run: |
+          cp public docs
+          cd docs
+          ls
 
 
