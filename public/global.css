@@ -114,6 +114,15 @@ html {
   --color-49: #521a13;
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    --white: #111;
+    --third-gray: rgba(187, 187, 187, .15);
+    --half-gray: rgba(187, 187, 187, .3);
+    --black: #fff;
+  }
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -123,6 +132,7 @@ body {
   display: flex;
   flex-direction: column;
 
+  background: var(--white);
   color: var(--black);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 16px;
