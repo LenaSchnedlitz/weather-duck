@@ -138,10 +138,11 @@
 <section>
   <h1>{greeting()}</h1>
   <form method="get" id="search-form" action="https://duckduckgo.com/" autocomplete="off">
-    <input type="text" name="q" aria-label="Search on DuckDuckGo" autofocus/>
+    <input type="text" name="q" aria-label="Search on DuckDuckGo" value="" autofocus/>
     <button>
       <!-- Feather Icon, https://feathericons.com -->
       <svg xmlns="http://www.w3.org/2000/svg">
+        <title>Search</title>
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
