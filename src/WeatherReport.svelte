@@ -1047,6 +1047,21 @@
 
     border-bottom: solid 1px var(--third-gray);
   }
+
+  @media (min-width: 900px) {
+    ul {
+      flex-direction: row;
+      margin: 0;
+      padding: 0 calc(calc(100% - calc(1200px + 6rem)) / 2);
+    }
+
+    li {
+      margin: auto 0;
+      padding: 0 3.6rem 6rem;
+      flex-direction: column;
+      border-bottom: none;
+    }
+  }
 </style>
 
 <ul>

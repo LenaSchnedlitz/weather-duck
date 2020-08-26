@@ -74,6 +74,45 @@
   button:focus {
     box-shadow: 0 0 0 .3rem var(--half-gray);
   }
+
+  @media (min-width: 900px) {
+    section {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: flex-end;
+
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: 750px;
+      padding-top: 6rem;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    form {
+      margin-top: 2rem;
+    }
+
+    input {
+      padding: .5rem .75rem;
+      border-radius: 4px;
+      font-size: 1.25rem;
+    }
+
+    input:active,
+    input:focus {
+      box-shadow: 0 0 0 .2rem var(--third-gray);
+    }
+
+    button {
+      top: .75rem;
+      right: .75rem;
+    }
+  }
 </style>
 
 <section>

@@ -130,7 +130,6 @@ body {
 svg {
   width: var(--icon-size);
   height: var(--icon-size);
-  viewBox: 0 0 var(--icon-size) var(--icon-size);
 
   fill: none;
   stroke: var(--black);

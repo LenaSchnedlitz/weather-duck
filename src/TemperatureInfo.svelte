@@ -13,10 +13,22 @@
 
 <style>
   div {
-    padding: 0.5rem;
+    padding: .5rem;
     line-height: 1rem;
     height: 1rem;
     border-radius: 2px;
+  }
+
+  @media (min-width: 900px) {
+    div {
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6rem;
+      padding: .45rem .4rem .55rem .6rem;
+    }
   }
 </style>
 

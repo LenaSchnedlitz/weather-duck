@@ -36,8 +36,16 @@
 </script>
 
 <style>
+  @media (min-width: 900px) {
+    svg {
+      width: 96px;
+      height: 96px;
+      stroke-width: .3;
+      padding: .5rem 0 2rem;
+    }
+  }
 </style>
 
-<svg>
+<svg viewBox="0 0 24 24">
   <use xlink:href="weather.svg#{getIconId()}"></use>
 </svg>

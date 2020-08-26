@@ -12,7 +12,7 @@
   }
 
   sup {
-    margin-left: 0.125rem;
+    margin-left: .125rem;
   }
 </style>
 
