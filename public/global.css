@@ -7,8 +7,10 @@ html {
   --icon-size: 24px;
 
   --white: #fff;
-  --gray: #bbb;
+  --third-gray: rgba(187, 187, 187, .3);
+  --half-gray: rgba(187, 187, 187, .5);
   --black: #111;
+  --gray: #bbb;
 
   --color--50: #e8ecfb;
   --color--49: #e4e5f7;
@@ -117,26 +119,22 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 16px;
 }
 
 svg {
-  height: var(--icon-size);
   width: var(--icon-size);
+  height: var(--icon-size);
+  viewBox: 0 0 var(--icon-size) var(--icon-size);
+
   fill: none;
   stroke: var(--black);
   stroke-width: 1;
   stroke-linecap: round;
   stroke-linejoin: round;
-}
-
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
 }

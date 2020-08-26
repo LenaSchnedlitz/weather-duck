@@ -22,7 +22,7 @@
     background-color: var(--white);
     border: 1px solid var(--gray);
     border-radius: 2px;
-    box-shadow: inset 0 .05rem .125rem rgba(187, 187, 187, .3);
+    box-shadow: inset 0 .05rem .125rem var(--third-gray);
 
     font-size: 1rem;
     line-height: 1.5;
@@ -35,7 +35,7 @@
   input:active,
   input:focus {
     border-color: var(--black);
-    box-shadow: 0 0 0 .15rem rgba(187, 187, 187, .3);
+    box-shadow: 0 0 0 .15rem var(--third-gray);
     outline: 0;
   }
 
@@ -61,7 +61,7 @@
   button:hover,
   button:active,
   button:focus {
-    background-color: rgba(187, 187, 187, .3);
+    background-color: var(--third-gray);
   }
 
   button:hover > svg,
@@ -72,7 +72,7 @@
 
   button:active,
   button:focus {
-    box-shadow: 0 0 0 .3rem rgba(187, 187, 187, .5);
+    box-shadow: 0 0 0 .3rem var(--half-gray);
   }
 </style>
 
@@ -81,8 +81,8 @@
   <form method="get" id="search-form" action="https://duckduckgo.com/" autocomplete="off">
     <input type="text" name="q" aria-label="Search on DuckDuckGo" autofocus/>
     <button>
-      <!-- Icon from https://feathericons.com/ -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <!-- Feather Icon, https://feathericons.com/ -->
+      <svg xmlns="http://www.w3.org/2000/svg">
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
