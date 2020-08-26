@@ -123,6 +123,11 @@ html {
   }
 }
 
+::selection {
+  background-color: var(--black);
+  color: var(--white);
+}
+
 body {
   width: 100%;
   height: 100%;
