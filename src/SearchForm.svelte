@@ -1,3 +1,21 @@
+<script>
+  const hour = new Date().getHours();
+
+  function createGreeting() {
+    if (hour < 5) {
+      return "Gute Nacht.";
+    } else if (hour < 11) {
+      return "Guten Morgen!";
+    } else if (hour < 17) {
+      return "Hi."
+    } else if (hour < 23) {
+      return "Schönen Abend!";
+    } else {
+      return "Gute Nacht.";
+    }
+  }
+</script>
+
 <style>
   section {
     padding: 1rem;
@@ -116,11 +134,11 @@
 </style>
 
 <section>
-  <h1>Hi.</h1>
+  <h1>{createGreeting()}</h1>
   <form method="get" id="search-form" action="https://duckduckgo.com/" autocomplete="off">
     <input type="text" name="q" aria-label="Search on DuckDuckGo" autofocus/>
     <button>
-      <!-- Feather Icon, https://feathericons.com/ -->
+      <!-- Feather Icon, https://feathericons.com -->
       <svg xmlns="http://www.w3.org/2000/svg">
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
