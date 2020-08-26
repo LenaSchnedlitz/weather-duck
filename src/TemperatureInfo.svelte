@@ -1,13 +1,23 @@
 <script>
   export let temperature;
 
-  function getStyle() {
+  function getBackgroundColor() {
     if (temperature > 49) {
       temperature = 49;
     } else if (temperature < -50) {
       temperature = -50;
     }
-    return `background-color:var(--color-${Math.round(temperature)});`;
+    return `var(--color-${Math.round(temperature)})`;
+  }
+
+  /**
+   * Returns color (black or white) with higher contrast.
+   */
+  function getColor() {
+    if (-32 <= temperature <= -18 || 35 <= temperature) {
+      return 'var(--white)';
+    }
+    return 'var(--black)';
   }
 </script>
 
@@ -32,6 +42,6 @@
   }
 </style>
 
-<div style="{getStyle()}">
+<div style="background-color:{getBackgroundColor()};color:{getColor()}">
   {Math.round(temperature)}°
 </div>
