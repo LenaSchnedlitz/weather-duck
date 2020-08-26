@@ -1381,7 +1381,7 @@ var app = (function () {
       target: document.body,
       props: {
         apiUrl: 'https://api.openweathermap.org/data/2.5/onecall?exclude=current,minutely,daily&units=metric',
-        apiKey: 'TODO',
+        apiKey: '5eacf9a2e596d202c9d14171bddf6e2b',
         apiLocation: 'lat=48.210033&lon=16.363449',
         greetings: {
           morning: 'Guten Morgen!',
