@@ -15,9 +15,9 @@
    */
   function color() {
     if (-32 <= temperature <= -18 || 35 <= temperature) {
-      return 'var(--white)';
+      return '#fff';
     }
-    return 'var(--black)';
+    return '#111';
   }
 </script>
 
