@@ -1,10 +1,10 @@
 # Weather Duck
 
+![Preview](preview.png)
+
 [![forthebadge](https://forthebadge.com/images/badges/as-seen-on-tv.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
 
-
-![Preview](preview.png)
 
 ## How To Use
 
