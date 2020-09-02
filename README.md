@@ -27,7 +27,7 @@ The app is based on [Svelte](https://svelte.dev/).
 * *How can I change the location of the weather report?*  
   You can't. This feature will be included in `v2.0`.  
 
-* *Can I change the displayed greetings? I don't speak German.*  
+* *Can I change greetings? I don't speak German.*  
   That's not possible at the moment. I want to include this feature in `v2.0`.  
 
 * *Did you come up with these questions yourself?*  
